@@ -1,1 +1,18 @@
+" Custom part of vimrc {
+" ------------------------------------------------------------------- "
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+" Set number
 set number
+
+" Toggle Relative number
+function! g:ToggleRelativeNumber()
+    set rnu!
+endfunction
+
+nmap <leader>n :call ToggleRelativeNumber()<CR>
+
+" }
