@@ -14,5 +14,6 @@ function! g:ToggleRelativeNumber()
 endfunction
 
 nmap <leader>n :call ToggleRelativeNumber()<CR>
+nmap <leader>s :syn sync fromstart<CR>
 
 " }
