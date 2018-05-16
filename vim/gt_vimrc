@@ -8,12 +8,43 @@ endif
 " Set number
 set number
 
-" Toggle Relative number
-function! g:ToggleRelativeNumber()
-    set rnu!
-endfunction
+" Switch buffers without save
+set hidden
 
-nmap <leader>n :call ToggleRelativeNumber()<CR>
-nmap <leader>s :syn sync fromstart<CR>
+" set leader to ,
+let mapleader = ","
+
+" Toggle Relative number
+nmap <C-n> :set rnu!<CR>
+nmap <C-s> :syn sync fromstart<CR>
+
+" List buffers with shortcut Ctrl - B
+nmap <C-B> :buffers<CR>:buffer<space>
+
+" No highlight
+nmap <leader>/ :noh<CR>
+
+" Set theme
+colorscheme gotham256
+
+" Show column 81
+set colorcolumn=81
+
+execute pathogen#infect()
+call pathogen#helptags()
+
+" Indentation
+syntax enable
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+
+" NerdTree
+map <C-e> :NERDTreeToggle<CR>
+
+" JS bindings
+imap <C-l> console.log();<esc>hi
 
 " }
