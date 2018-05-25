@@ -44,12 +44,8 @@ set expandtab
 set autoindent
 set smartindent
 
-" NerdTree
-map <C-e> :NERDTreeToggle<CR>
-
 " JS bindings
 imap <C-l> console.log();<esc>hi
-
 
 " ---- Vim Plugin ---- "
 call plug#begin('~/.vim/plugged')
@@ -61,8 +57,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'raimondi/delimitmate'
 Plug 'yggdroot/indentline'
 Plug 'craigemery/vim-autotag'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
+
+" NerdTree
+map <C-e> :NERDTreeToggle<CR>
 
 " ctrlp option
 let g:ctrlp_show_hidden = 1
