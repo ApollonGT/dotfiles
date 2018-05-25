@@ -10,6 +10,9 @@ set number
 
 " Switch buffers without save
 set hidden
+" Maintain undo history between sessions"
+set undofile
+set undodir=~/.vim/undodir
 
 " set leader to ,
 let mapleader = ","
@@ -46,5 +49,24 @@ map <C-e> :NERDTreeToggle<CR>
 
 " JS bindings
 imap <C-l> console.log();<esc>hi
+
+
+" ---- Vim Plugin ---- "
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'raimondi/delimitmate'
+Plug 'yggdroot/indentline'
+Plug 'craigemery/vim-autotag'
+
+call plug#end()
+
+" ctrlp option
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_extensions = ['tag']
+nnoremap <Leader>p :CtrlPTag<Cr>
 
 " }
