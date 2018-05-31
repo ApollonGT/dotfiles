@@ -7,6 +7,8 @@ endif
 
 " Set number
 set number
+" Don't wrap text - code
+set nowrap
 
 " Switch buffers without save
 set hidden
