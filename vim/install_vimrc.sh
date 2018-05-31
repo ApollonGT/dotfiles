@@ -19,6 +19,10 @@ else
     echo "  File '$RESTORE_FILE' does not exist"
 fi
 
+echo "--- installing Plugin Manager ---"
+eval "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+echo "  Done!"
+
 echo "--- Backup current .vimrc ---"
 
 if [[ -f "$CURRENT_VIMRC" ]]

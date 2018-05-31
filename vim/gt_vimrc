@@ -29,14 +29,8 @@ nmap <C-B> :buffers<CR>:buffer<space>
 " No highlight
 nmap <leader>/ :noh<CR>
 
-" Set theme
-colorscheme gotham256
-
 " Show column 81
 set colorcolumn=81
-
-execute pathogen#infect()
-call pathogen#helptags()
 
 " Indentation
 syntax enable
@@ -60,6 +54,7 @@ Plug 'raimondi/delimitmate'
 Plug 'yggdroot/indentline'
 Plug 'craigemery/vim-autotag'
 Plug 'scrooloose/nerdtree'
+Plug 'whatyouhide/vim-gotham'
 
 call plug#end()
 
@@ -70,5 +65,8 @@ map <C-e> :NERDTreeToggle<CR>
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_extensions = ['tag']
 nnoremap <Leader>p :CtrlPTag<Cr>
+
+" Set theme
+colorscheme gotham256
 
 " }
