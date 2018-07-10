@@ -23,6 +23,10 @@ echo "--- installing Plugin Manager ---"
 eval "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 echo "  Done!"
 
+echo "--- installing Instand Markdown daemon ---"
+eval "sudo npm install instant-markdown-d -g"
+echo "  Done!"
+
 echo "--- Backup current .vimrc ---"
 
 if [[ -f "$CURRENT_VIMRC" ]]
@@ -39,3 +43,4 @@ eval "cp -f $GT_VIMRC $CURRENT_VIMRC"
 echo "  Done!"
 
 echo "Installation complete!"
+echo "Dont forget to run :PlugInstall to install plugins."

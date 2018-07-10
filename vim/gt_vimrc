@@ -55,6 +55,7 @@ Plug 'yggdroot/indentline'
 Plug 'craigemery/vim-autotag'
 Plug 'scrooloose/nerdtree'
 Plug 'whatyouhide/vim-gotham'
+Plug 'suan/vim-instant-markdown'
 
 call plug#end()
 
@@ -68,5 +69,10 @@ nnoremap <Leader>p :CtrlPTag<Cr>
 
 " Set theme
 colorscheme gotham256
+
+" Teach Vim to Fish
+if &shell =~# 'fish$'
+    set shell=sh
+endif
 
 " }
