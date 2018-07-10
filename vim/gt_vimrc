@@ -30,7 +30,7 @@ nmap <C-B> :buffers<CR>:buffer<space>
 nmap <leader>/ :noh<CR>
 
 " Show column 81
-set colorcolumn=81
+set colorcolumn=81,110
 
 " Indentation
 syntax enable
