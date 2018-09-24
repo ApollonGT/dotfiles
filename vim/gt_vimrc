@@ -56,11 +56,16 @@ Plug 'craigemery/vim-autotag'
 Plug 'scrooloose/nerdtree'
 Plug 'whatyouhide/vim-gotham'
 Plug 'suan/vim-instant-markdown'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
+
+" Jedi Options
+let g:jedi#use_splits_not_buffers = "right"
 
 " ctrlp option
 let g:ctrlp_show_hidden = 1
