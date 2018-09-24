@@ -59,6 +59,7 @@ Plug 'suan/vim-instant-markdown'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'klen/python-mode'
 Plug 'maralla/completor.vim'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
