@@ -60,6 +60,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'klen/python-mode'
 Plug 'maralla/completor.vim'
 Plug 'posva/vim-vue'
+Plug 'ironcamel/vim-script-runner'
 
 call plug#end()
 
