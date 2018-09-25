@@ -67,8 +67,8 @@ call plug#end()
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
 
-" Jedi Options
-let g:jedi#use_splits_not_buffers = "right"
+" PyMode Options
+let g:pymode_folding = 0
 
 " ctrlp option
 let g:ctrlp_show_hidden = 1
