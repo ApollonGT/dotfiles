@@ -40,9 +40,6 @@ set expandtab
 set autoindent
 set smartindent
 
-" JS bindings
-imap <C-l> console.log();<esc>hi
-
 " ---- Vim Plugin ---- "
 call plug#begin('~/.vim/plugged')
 
@@ -67,8 +64,8 @@ call plug#end()
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
 
-" PyMode Options
-let g:pymode_folding = 0
+" Don't auto-fold
+set nofoldenable
 
 " ctrlp option
 let g:ctrlp_show_hidden = 1
@@ -82,5 +79,22 @@ colorscheme gotham256
 if &shell =~# 'fish$'
     set shell=sh
 endif
+
+" --- Custom Functions ---
+
+" Logging - Printing
+function! Log()
+    if ((&ft=='javascript') || (&ft=='vue'))
+        execute "normal iconsole.log();\<esc>h"
+        startinsert
+    endif
+
+    if (&ft=='python')
+        execute "normal iprint()\<esc>"
+        startinsert
+    endif
+endfunction
+
+inoremap <C-l> <esc>:call Log()<CR>
 
 " }
