@@ -59,6 +59,7 @@ Plug 'maralla/completor.vim'
 Plug 'posva/vim-vue'
 Plug 'ironcamel/vim-script-runner'
 Plug 'tpope/vim-fugitive'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
