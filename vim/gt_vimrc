@@ -58,8 +58,12 @@ Plug 'klen/python-mode'
 Plug 'maralla/completor.vim'
 Plug 'posva/vim-vue'
 Plug 'ironcamel/vim-script-runner'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+" Fugitive Shortkeys
+map <leader>g :Gblame<CR>
 
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
