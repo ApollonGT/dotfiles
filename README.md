@@ -55,11 +55,11 @@ Obviously the software itself (Bash, Fish, Tmux, Vim)
     * Instant Markdown (Service for live markdown preview)
     * Trailing whitespaces (Highlight whitespaces)
     * Python Mode
-    * Completor (For autocomplete)
     * VueJS Syntax Highlight
     * Script Runner (\<F5\>)
     * Fugitive (\<leader\>g for blame) ([Tutorials](https://vimawesome.com/plugin/fugitive-vim))
     * [Emmet.io](https://emmet.io) plugin ([Tutorial](https://github.com/mattn/emmet-vim/blob/master/TUTORIAL.mkd))
+    * [Deoplete](https://github.com/Shougo/deoplete.nvim) as auto completor. (**Important**: Vim needs to have python3 support.)
 * In case of Fish Shell it fixes some misfunctionalities.
 
 #### Tmux
