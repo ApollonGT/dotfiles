@@ -59,6 +59,8 @@ Plug 'posva/vim-vue'
 Plug 'ironcamel/vim-script-runner'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -73,6 +75,11 @@ call plug#end()
 " enable deoplete
 let g:deoplete#sources#jedi#show_docstring = 1
 let g:deoplete#enable_at_startup = 1
+
+" Trigger Ultisnip configuration.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 
 " Fugitive Shortkeys
 map <leader>g :Gblame<CR>
