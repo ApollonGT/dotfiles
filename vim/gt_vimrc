@@ -32,6 +32,12 @@ nmap <leader>/ :noh<CR>
 " Show column 81
 set colorcolumn=81,110
 
+" Resize Panes
+nmap <C-l> :vertical resize +5<CR>
+nmap <C-h> :vertical resize -5<CR>
+nmap <C-k> :resize +5<CR>
+nmap <C-j> :resize -5<CR>
+
 " Indentation
 syntax enable
 set tabstop=4
@@ -93,7 +99,7 @@ set nofoldenable
 " ctrlp option
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_extensions = ['tag']
-nnoremap <Leader>p :CtrlPTag<Cr>
+nnoremap <Leader>p :CtrlPTag<CR>
 
 " Set theme
 colorscheme gotham256

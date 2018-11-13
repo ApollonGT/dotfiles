@@ -61,6 +61,7 @@ Obviously the software itself (Bash, Fish, Tmux, Vim)
     * [Emmet.io](https://emmet.io) plugin ([Tutorial](https://github.com/mattn/emmet-vim/blob/master/TUTORIAL.mkd))
     * [Deoplete](https://github.com/Shougo/deoplete.nvim) as auto completor. (**Important**: Vim needs to have python3 support.)
 * In case of Fish Shell it fixes some misfunctionalities.
+* Pane resize: Ctrl+[h,j,k,l]
 
 #### Tmux
 
