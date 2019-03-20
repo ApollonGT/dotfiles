@@ -78,6 +78,9 @@ Plug 'zchee/deoplete-jedi'
 
 call plug#end()
 
+" Fix mython mode slowdown
+let g:pymode_folding = 0
+
 " enable deoplete
 let g:deoplete#sources#jedi#show_docstring = 1
 let g:deoplete#enable_at_startup = 1
