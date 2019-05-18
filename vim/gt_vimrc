@@ -96,6 +96,8 @@ map <leader>g :Gblame<CR>
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
 
+map <leader>B obreakpoint()<esc>
+
 " Don't auto-fold
 set nofoldenable
 
